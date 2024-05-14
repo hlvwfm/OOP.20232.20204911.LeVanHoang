@@ -72,5 +72,12 @@ public class Store {
             System.out.println("Media item with title '" + title + "' not found in the store.");
         }
     }
+
+	
+
+	public ArrayList<Media> getItemsInStore() {
+		return new ArrayList<>(itemsInStore);
+		
+	}
     
 }
