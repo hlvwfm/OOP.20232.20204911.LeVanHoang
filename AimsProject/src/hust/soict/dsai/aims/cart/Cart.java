@@ -1,6 +1,9 @@
 package hust.soict.dsai.aims.cart;
 import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Media;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -8,7 +11,7 @@ import java.util.Collections;
 public class Cart {
 	public static final int MAX_NUMBERS_ORDERED = 20; 
 	private static float cost = 0.0f;
-	private ArrayList<Media> itemsOrdered = new ArrayList<>();
+	private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
 	
 	
 	public void addMedia(Media media) {
@@ -68,6 +71,12 @@ public class Cart {
         if (match == 0) {
             System.out.println("Not found");
         }
+    }
+
+
+
+    public ObservableList<Media> getItemsOrdered() {
+        return itemsOrdered;
     }
 	
 	
