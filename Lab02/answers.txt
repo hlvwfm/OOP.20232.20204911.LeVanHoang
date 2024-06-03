@@ -1,2 +1,0 @@
-When should accessor methods be used?
--Accessor methods, such as getters and setters, should be used to provide controlled access to the internal state of an object, allowing other parts of the program to retrieve or modify its attributes while encapsulating its implementation details.
